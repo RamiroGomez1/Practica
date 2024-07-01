@@ -1,0 +1,23 @@
+body {
+    font-family: 'Calibri', 'Trebuchet MS', sans-serif;
+    text-align: center;
+} 
+
+form {
+    text-align: center;
+}
+
+.input-button {
+    border-radius: 8px;
+    background-color: black;
+    color: aliceblue;
+}
+
+label {
+    display: block ;
+}
+
+form > div {
+    margin: 16px
+}
+
