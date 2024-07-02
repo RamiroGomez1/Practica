@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica con tailwind 2 y 3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="container mx-auto mt-5 text-center">
+    
+        <div class="grid grid-cols-3 gap-4 my=2">
+            <div class="bg-red-400">A</div>
+            <div class="bg-red-400">A</div>
+            <div class="bg-red-400">A</div>
+            <div class="bg-red-400">A</div>
+        </div>
+        *********
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 my=2">
+            <div class="bg-blue-400">A</div>
+            <div class="bg-blue-400">A</div>
+            <div class="bg-blue-400">A</div>
+            <div class="bg-blue-400">A</div>
+        </div>
+        ********
+        <div class="grid grid-cols-4 gap-4 mt-2">
+            <div class="bg-pink-400 col-start-2">B</div>
+            <div class="bg-pink-400 col-end-3">c</div>
+            <div class="bg-pink-400">A</div>
+            <div class="bg-pink-400">A</div>
+        </div>
+        ********
+        <div class="grid grid-rows-4 gap-5">
+            <div class="bg-orange-500 row-span-2">A</div>
+            <div class="bg-orange-500">A</div>
+            <div class="bg-orange-500">A</div>
+            <div class="bg-orange-500">A</div>
+        </div>
+        ********
+        
+        <div class="grid gap-4 grid-cols-1 grid-rows-5 sm:grid-cols-4 sm:grid-rows-5">
+            <div class="bg-orange-500">A</div>
+            <div class="bg-orange-500">B</div>
+            <div class="bg-orange-500 col-span-1 sm:col-span-2 row-span-1 sm:row-span-2">C</div>
+            <div class="bg-orange-500">D</div>
+            <div class="bg-orange-500">E</div>
+            <div class="bg-orange-500 col-span-1 sm:col-span-3 row-span-1 sm:row-span-3">F</div>
+            <div class="bg-orange-500 col-span-1 row-span-1 sm:row-span-3">G</div>
+        </div>
+</body>
+</html>
