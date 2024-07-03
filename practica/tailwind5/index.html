@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,26 +8,43 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body class=" w-100 text-center">
-    <div class=" grid grid-cols-3 align-center bg-blue-100">
-<!-- flex me permitio, dentro del div, tener la capacidad de mover la imagen donde yo quiera. justify-start me permitio dejarlo fijado al lado izquierdo. Si bien no se movio por ser default, si hubiese querido moverlo al lado derecho tendria que haber usado el flex combinado con justify-end, lo mismo con justify-center si hubiese querido dejarlo en medio. -->
-        <div class="">
-            <a class="inline-block flex justify-start" href="https://tailwindcss.com/">
-                <img width="200px" src="tailwind.png" alt="Tailwind CSS">
-            </a>
+
+<body>
+    <nav class="container mx-auto text-center bg-blue-100">
+
+        <div class="space-evenly grid grid-cols-12 flex">
+            <div class="col-span-4">
+                <!-- flex me permitio, dentro del div, tener la capacidad de mover la imagen donde yo quiera. justify-start me permitio dejarlo fijado al lado izquierdo. Si bien no se movio por ser default, si hubiese querido moverlo al lado derecho tendria que haber usado el flex combinado con justify-end, lo mismo con justify-center si hubiese querido dejarlo en medio. -->
+                <a class="inline-block flex justify-start" href="https://tailwindcss.com/">
+                    <img width="200px" src="tailwind.png" alt="Tailwind CSS">
+                </a>
+            </div>
+            
+            <div class="col-span-4 self-center grid grid-rows-3 sm:grid-rows-1 grid-cols-1 sm:grid-cols-3">
+                <div id="menu" class="">Docs</div>
+                <div id="menu2" class="">Components</div>
+                <div id="menu3" class="">Blogs</div>
+            </div>
+            
+            
+            
+            
+            <div class="self-center col-span-1 grid grid-cols-2 grid-rows-1 col-start-11 flex justify-end">
+                <a class="opacity-30 col-start-2" href="https://github.com/tailwindlabs/tailwindcss">
+                    <img width="50px" src="github-logo.png" alt="github">
+                </a>
+            </div>
+            <div class="self-center col-span-1 flex-end grid grid-cols-2 grid-rows-1 flex justify-end">
+                <button id="boton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 h-12 w-24 rounded-full">
+                    Boton
+                </button>
+            </div>
+            
+            
+            
         </div>
-        
-        <div class=" self-center grid grid-rows-3 sm:grid-rows-1 grid-cols-1 sm:grid-cols-3">
-            <div class="">Docs</div>
-            <div class="">Components</div>
-            <div class="">Blogs</div>
-        </div>
-        <div class="self-center  opacity-30">
-            <a class="block flex justify-end mx-6" href="https://github.com/tailwindlabs/tailwindcss">
-                <img width="50px" src="github-logo.png" alt="github">
-            </a>
-        </div>
-    </div>
-        
+    </nav>
+    <script src="app.js"></script>
 </body>
+
 </html>
