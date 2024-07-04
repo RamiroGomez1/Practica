@@ -4,7 +4,10 @@ module.exports = {
     './src/**/*.{html,js}'
   ],
   theme: {
-    extend: {},
+    extend: {
+      borderWidth: ['responsive', 'hover', 'focus'],
+  },
+    },
   },
   plugins: [],
 }

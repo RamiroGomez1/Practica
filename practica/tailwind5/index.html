@@ -15,27 +15,48 @@
         <div class="space-evenly grid grid-cols-12 flex">
             <div class="col-span-4">
                 <!-- flex me permitio, dentro del div, tener la capacidad de mover la imagen donde yo quiera. justify-start me permitio dejarlo fijado al lado izquierdo. Si bien no se movio por ser default, si hubiese querido moverlo al lado derecho tendria que haber usado el flex combinado con justify-end, lo mismo con justify-center si hubiese querido dejarlo en medio. -->
-                <a class="inline-block flex justify-start" href="https://tailwindcss.com/">
+                <a class="inline-block col-span-2 flex justify-start" href="https://tailwindcss.com/">
                     <img width="200px" src="tailwind.png" alt="Tailwind CSS">
                 </a>
             </div>
             
             <div class="col-span-4 self-center grid grid-rows-3 sm:grid-rows-1 grid-cols-1 sm:grid-cols-3">
-                <div id="menu" class="">Docs</div>
-                <div id="menu2" class="">Components</div>
-                <div id="menu3" class="">Blogs</div>
+                <div id="menu" class="
+                block
+                border-b-2 border-blue-100
+                transition ease-in duration-500
+                hover:border-b-2 hover:border-gray-600 mx-auto
+                "><a href="https://tailwindcss.com/docs/installation" 
+                class="">
+                Docs
+                </a></div>
+
+                <div id="menu2" class="
+                block
+                transition ease-in duration-500
+                border-b-2 border-blue-100
+                hover:border-b-2 hover:border-gray-600 mx-auto
+                "><a href="https://tailwindui.com/?ref=top">
+                    Components
+                </a></div>
+
+                <div id="menu3" class="block
+                border-b-2 border-blue-100
+                transition ease-in duration-500
+                hover:border-b-2 hover:border-gray-600 mx-auto"><a href="https://tailwindcss.com/blog">Blogs</a></div>
             </div>
-            
-            
-            
             
             <div class="self-center col-span-1 grid grid-cols-2 grid-rows-1 col-start-11 flex justify-end">
                 <a class="opacity-30 col-start-2" href="https://github.com/tailwindlabs/tailwindcss">
                     <img width="50px" src="github-logo.png" alt="github">
                 </a>
-            </div>
+            </div>   
+
             <div class="self-center col-span-1 flex-end grid grid-cols-2 grid-rows-1 flex justify-end">
-                <button id="boton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 h-12 w-24 rounded-full">
+                <button id="boton" class="shadow-md text-black border border-2 border-sky-500
+                hover:bg-sky-500 
+                text-white font-bold 
+                py- h-12 w-24 rounded-xl transition ease-in duration-450">
                     Boton
                 </button>
             </div>
