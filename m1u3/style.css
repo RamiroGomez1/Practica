@@ -21,3 +21,7 @@ form > div {
     margin: 16px
 }
 
+img {
+    border-radius: 15px;
+    box-shadow: 0 0 10px ;
+}
