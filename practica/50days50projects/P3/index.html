@@ -11,37 +11,66 @@
  
 </head>
 
-<body class="container mx-auto bg-neutral-900 text-white ">
+<body class=" mx-auto bg-neutral-900 ">
 
-  <div class=" rounded-3xl 
-  w-2/5 px-10 py-5 
-  bg-gradient-to-t from-zinc-950 to-zinc-700
-  mt-32
+ <!-- Hacer fondo con efecto en el que el fondo reaccione a donde este el mouse -->
+
+  <div class="container rounded-3xl 
+  w-[500px] px-10 py-5 h-[500px]
+  bg-gradient-to-t from-zinc-950 to-zinc-800
+  mt-48
   mx-auto"> 
 
-    
+    <!-- Falta acomodar lo de las fuentes y los tamaños y distancias -->
 
-    <img src="interactive-rating-component-main/images/icon-star.svg" alt="Icon Star" class="shadow-md bg-gray-400 rounded-full p-3">
+    <img src="interactive-rating-component-main/images/icon-star.svg" alt="Icon Star" class="shadow-md bg-zinc-800 rounded-full mb-8 p-3">
 
-    <h1>
+    <h1 class="text-white mb-4 font-Overpass">
       How did we do?
     </h1>
     
-    <h1>
+    <h1 class="text-white font-thin text-sm mb-4">
       Please let us know how we did with your support request. All feedback is appreciated 
       to help us improve our offering!
     </h1>
     
-    <h1>
-      1 2 3 4 5
-    </h1>
+    <div class="grid grid-cols-5 grid-rows-1 mb-5 py-4">
+
+      <!-- Falta hacer el efecto del hover y focus en los botones-->
+
+      <button class="text-white text-xs bg-zinc-800 w-14 h-14 content-center text-center rounded-full m">
+        1 
+      </button>
+      
+        <button class="text-white text-xs bg-zinc-800 w-14 h-14 content-center text-center rounded-full m">
+          2 
+        </button>
+        
+        <button class="text-white text-xs bg-zinc-800 w-14 h-14 content-center text-center rounded-full m">
+          3 
+        </button>
+        
+        <button class="text-white text-xs bg-zinc-800 w-14 h-14 content-center text-center rounded-full m">
+          4 
+        </button>
+        
+        <button class="text-white text-xs bg-zinc-800 w-14 h-14 content-center text-center rounded-full m">
+          5
+        </button>
+        
+
+    </div>
+
     
-    <h1>
+    <button id="button" type="submit" class="text-black font-extrabold w-[420px] bg-orange-500 rounded-full  text-center py-2  mb-4">
       Submit
-    </h1>
+    </button>
     
     
     <!--
+
+    Falta seccion luego de apretar submit
+
     <h1>
       You selected  out of 5
     </h1>
@@ -62,7 +91,6 @@
     Coded by <a href="#">Your Name Here</a>.
    </div>
 
-   <script src="app.js"></script>
    
 </body>
 </html>
