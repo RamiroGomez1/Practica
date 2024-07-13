@@ -2,10 +2,12 @@
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
-    fontFamily: {
-    'Overpass': ['Overpass']
   },
-    extend: {},
+  
+    extend: {
+      fontFamily: {
+        'Overpass': ['Overpass']
+    },
     
   },
   plugins: [],

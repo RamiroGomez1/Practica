@@ -16,81 +16,88 @@
  <!-- Hacer fondo con efecto en el que el fondo reaccione a donde este el mouse -->
 
   <div class="container rounded-3xl 
-  w-[500px] px-10 py-5 h-[500px]
-  bg-gradient-to-t from-zinc-950 to-zinc-800
+  w-[500px] px-8 py-8 
+  bg-gradient-to-t from-zinc-900 to-zinc-800
   mt-48
-  mx-auto"> 
-
-    <!-- Falta acomodar lo de las fuentes y los tamaños y distancias -->
-
-    <img src="interactive-rating-component-main/images/icon-star.svg" alt="Icon Star" class="shadow-md bg-zinc-800 rounded-full mb-8 p-3">
-
-    <h1 class="text-white mb-4 font-Overpass">
-      How did we do?
-    </h1>
-    
-    <h1 class="text-white font-thin text-sm mb-4">
-      Please let us know how we did with your support request. All feedback is appreciated 
-      to help us improve our offering!
-    </h1>
-    
-    <div class="grid grid-cols-5 grid-rows-1 mb-5 py-4">
-
-      <!-- Falta hacer el efecto del hover y focus en los botones-->
-
-      <button class="text-white text-xs bg-zinc-800 w-14 h-14 content-center text-center rounded-full m">
-        1 
-      </button>
-      
-        <button class="text-white text-xs bg-zinc-800 w-14 h-14 content-center text-center rounded-full m">
-          2 
-        </button>
+  mx-auto">
+  
+  <!--
+    <div>
+  
         
-        <button class="text-white text-xs bg-zinc-800 w-14 h-14 content-center text-center rounded-full m">
-          3 
-        </button>
+      <img src="interactive-rating-component-main/images/icon-star.svg" alt="Icon Star" class="shadow-2xl bg-zinc-900 rounded-full mb-8 p-3">
         
-        <button class="text-white text-xs bg-zinc-800 w-14 h-14 content-center text-center rounded-full m">
-          4 
-        </button>
+        <h1 class="text-white mb-4 text-3xl font-bold">
+          How did we do?
+        </h1>
         
-        <button class="text-white text-xs bg-zinc-800 w-14 h-14 content-center text-center rounded-full m">
-          5
-        </button>
+        <h1 class="text-white font-thin text- mb-4">
+          Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!
+        </h1>
         
 
+        <div class="grid grid-cols-5 grid-rows-1 mb-5 py-4">
+          <button class="text-white text-xs  w-14 h-14 content-center text-center rounded-full bg-zinc-900 transition ease-in duration-400
+          hover:bg-orange-500 hover:text-black">
+            1 
+          </button>
+          
+            <button class="text-white text-xs bg-zinc-900 w-14 h-14 content-center text-center rounded-full transition ease-in duration-400
+            hover:bg-orange-500 hover:text-black">
+              2 
+            </button>
+            
+            <button class="text-white text-xs bg-zinc-900 w-14 h-14 content-center text-center rounded-full transition ease-in duration-400
+            hover:bg-orange-500 hover:text-black">
+              3 
+            </button>
+            
+            <button class="text-white text-xs bg-zinc-900 w-14 h-14 content-center text-center rounded-full transition ease-in duration-400
+            hover:bg-orange-500 hover:text-black">
+              4 
+            </button>
+            
+            <button class="text-white text-xs bg-zinc-900 w-14 h-14 content-center text-center rounded-full transition ease-in duration-400
+            hover:bg-orange-500 hover:text-black">
+              5
+            </button>
+        </div>
+
+        
+        <button id="submit" type="submit" class="text-black font-extrabold w-full bg-orange-500 rounded-full  text-center py-2  mb-4 transition ease-linear duration-400 hover:bg-white">
+          Submit
+        </button>
     </div>
+    -->
+      
+    <div id="seccion2" class="text-white">
 
+      <h1 class="text-white mb-4 text-3xl font-bold">
+        Thank You!
+      </h1>
+      
+      <h1 class="text-white font-thin mb-4">
+        You selected ${Input} out of 5
+      </h1>
     
-    <button id="button" type="submit" class="text-black font-extrabold w-[420px] bg-orange-500 rounded-full  text-center py-2  mb-4">
-      Submit
-    </button>
-    
-    
-    <!--
-
-    Falta seccion luego de apretar submit
-
-    <h1>
-      You selected  out of 5
-    </h1>
-    
-    <h1>
-      Thank you!
-    </h1>
-    
-    <h1>
+    <h1 class="text-white font-thin mb-4">
       We appreciate you taking the time to give a rating. If you ever need more support, 
       don’t hesitate to get in touch!
     </h1>
-    -->
+    <button id="" class="text-black font-extrabold w-full bg-orange-500 rounded-full  text-center py-2  mb-4 transition ease-linear duration-400 hover:bg-white">
+          Go Back
+        </button>
+
+    </div>
   </div>
 
-    <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <div class="attribution text-center mt-40 text-white">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="transition ease-linear duration-400 hover:text-orange-500">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/RamiroGomez1">Ramiro Gomez</a>.
    </div>
 
-   
-</body>
+<script src="app.js"></script>
+
+  </body>
 </html>
