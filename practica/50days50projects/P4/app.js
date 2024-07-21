@@ -72,14 +72,14 @@ document.addEventListener('DOMContentLoaded',()=>{
 
             const newCartItem = document.createElement('div');
             newCartItem.innerHTML = `
-            <div class="grid grid-rows-2 mt-5 border-b-2 p-1 text-nowrap">
+            <div class="grid grid-rows-2 mt-5 border-b-2 p-1 text-nowrap cart-item">
             <div>
             <h1 class="mb-1 text-lg font-semibold">${product.type}</h1>
             </div>
             <div class="flex text-nowrap text-base items-center">
             <h1 class="mx-2 text-orange-600 font-bold" id="amountOfProducts">x${product.amount}</h1>
-            <h1 class="mx-2 font-thin" id="costPerUnit">${product.price}</h1>
-            <h1 class="mx-2 font-bold" id="totalCostPerProduct">${totalCost}</h1>
+            <h1 class="mx-2 font-thin" id="costPerUnit">$${product.price}</h1>
+            <h1 class="mx-2 font-bold" id="totalCostPerProduct">$${totalCost}</h1>
             <button class="ml-auto text-red-600 font-bold remove-btn" data-id="${product.id}">X</button>
             </div>
             </div>
@@ -87,20 +87,25 @@ document.addEventListener('DOMContentLoaded',()=>{
             cartItems.appendChild(newCartItem)
             
         })
+
         addedItemsText.textContent = `You have added ${cartProducts.length} items to your cart.`;
         
-
-        /* Falta darle funcionalidad de eliminar a los botones X y de poder remover de a 1 los items */
+console.log(cartItems)
         
-        const removeButtons =document.querySelectorAll('.remove-btn'); 
+        const removeButtons = document.querySelectorAll('.remove-btn'); 
         removeButtons.forEach(button => {
-            button.addEventListener('click', ()=> {
-                
+            button.addEventListener('click', (event)=> {
+                const button = event.target;
+                const cartItem = button.closest('.cart-item');
+                cartItem.remove();
+                const IdOfProduct = button.dataset.id;
+        cartProducts = cartProducts.filter(product => product.id !== IdOfProduct);
+
+                const remainingItems = document.querySelectorAll('.cart-item').length
+                addedItemsText.textContent = `You have added ${remainingItems} items to your cart.`
             })
         })
     }
 
-
-   
 })
 
