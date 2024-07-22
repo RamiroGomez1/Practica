@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded',()=>{
             
             /* el metodo closest() selecciona al primer pariente del button que tenga la clase '.w-80'              */
             
-            const productElement = button.closest('.w-80');
+            const productElement = button.closest('.w-full');
             
             /* Ahora uso el productElement para seleccionar cada type, product y price (clases) del div para luego meterlo en el carrito */
 
