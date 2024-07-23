@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="src/output.css">
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+<body class="bg-slate-500 container mx-auto font-bold">
+
+<div class="bg-slate-800 my-40 mx-auto w-min rounded-xl p-5 pt-10">
+
+  <div class="bg-slate-200 w-[460px] mx-auto h-24 rounded-xl h-10 text-right content-center">
+    <h1 class="mx-5 text-3xl text-clip overflow-hidden"></h1>
+  </div>
+
+  <div class=" mx-auto
+  grid grid-cols-4 grid-row gap-5 p-5
+  w-[500px] h-min mt-5
+  ">
+    <button id="7" class="hover:text-red-600 bg-orange-100 text-center py-2 mx-auto mt-2 rounded-md border-orange-200 border-b-4 w-[100px]">7</button>
+    <button id="8" class="hover:text-red-600 bg-orange-100 text-center py-2 mx-auto mt-2 rounded-md border-orange-200 border-b-4 w-[100px]">8</button>
+    <button id="9" class="hover:text-red-600 bg-orange-100 text-center py-2 mx-auto mt-2 rounded-md border-orange-200 border-b-4 w-[100px]">9</button>
+    <button id="DEL" class="hover:text-red-600 bg-slate-400 text-center py-2 mx-auto mt-2 rounded-md border-b-slate-600 border-b-4 w-[100px] text-white">DEL</button>
+    <button id="4" class="hover:text-red-600 bg-orange-100 text-center py-2 mx-auto mt-2 rounded-md border-orange-200 border-b-4 w-[100px]">4</button>
+    <button id="5" class="hover:text-red-600 bg-orange-100 text-center py-2 mx-auto mt-2 rounded-md border-orange-200 border-b-4 w-[100px]">5</button>
+    <button id="6" class="hover:text-red-600 bg-orange-100 text-center py-2 mx-auto mt-2 rounded-md border-orange-200 border-b-4 w-[100px]">6</button>
+    <button id="+" class="hover:text-red-600 bg-orange-100 text-center py-2 mx-auto mt-2 rounded-md border-orange-200 border-b-4 w-[100px]">+</button>
+    <button id="1" class="hover:text-red-600 bg-orange-100 text-center py-2 mx-auto mt-2 rounded-md border-orange-200 border-b-4 w-[100px]">1</button>
+    <button id="2" class="hover:text-red-600 bg-orange-100 text-center py-2 mx-auto mt-2 rounded-md border-orange-200 border-b-4 w-[100px]">2</button>
+    <button id="3" class="hover:text-red-600 bg-orange-100 text-center py-2 mx-auto mt-2 rounded-md border-orange-200 border-b-4 w-[100px]">3</button>
+    <button id="-" class="hover:text-red-600 bg-orange-100 text-center py-2 mx-auto mt-2 rounded-md border-orange-200 border-b-4 w-[100px]">-</button>
+    <button id="." class="hover:text-red-600 bg-orange-100 text-center py-2 mx-auto mt-2 rounded-md border-orange-200 border-b-4 w-[100px]">.</button>
+    <button id="0" class="hover:text-red-600 bg-orange-100 text-center py-2 mx-auto mt-2 rounded-md border-orange-200 border-b-4 w-[100px]">0</button>
+    <button id="/" class="hover:text-red-600 bg-orange-100 text-center py-2 mx-auto mt-2 rounded-md border-orange-200 border-b-4 w-[100px]">/</button>
+    <button id="x" class="hover:text-red-600 bg-orange-100 text-center py-2 mx-auto mt-2 rounded-md border-orange-200 border-b-4 w-[100px] ">x</button>
+    <button id="RESET" class="hover:text-red-600 bg-slate-400 text-center py-2 mx-auto mt-2 rounded-md border-b-slate-600 border-b-4 w-[220px] col-span-2 text-white">RESET</button>
+    <button id="equal" class="hover:text-black bg-red-500 text-center py-2 mx-auto mt-2 rounded-md border-b-red-800 border-b-4 w-[220px] col-span-2 text-white">=</button>
+
+
+  </div>
+</div>
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
