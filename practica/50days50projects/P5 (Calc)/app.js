@@ -1,8 +1,25 @@
-const buttons = ['RESET', 'equal', 'x', '/', '0', 'punto', '-', '3', '2', '1', '+', '6', '5', '4', 'DEL', '9', '8', '7'];
+const display = document.getElementById('display');
 
-buttons.forEach(id => { 
-    const button = document.getElementById(id);
-    button.addEventListener('click', () => {
 
-    });
-})
+function appendToDisplay(input){
+    display.value += input
+ }
+
+function clearButton(){
+    display.value = '';
+};
+
+function deleteButton(){
+    display
+}
+    
+function calculate(){
+        try{
+            display.value = eval(display.value);
+            }
+            catch(error){
+                display.value = 'Error'
+            }
+    }
+
+
