@@ -1,5 +1,5 @@
 // Objetos literales
-
+ 
 const object1 = {
     name: 'Arto Hellas',
     age: 35, 
@@ -31,4 +31,5 @@ console.log(object1[fieldName]) // se imprime 35
 
 //Tambien se puede agregar propiedades a un objeto sobre la marcha 
 object1.address = 'Helsinki'
-object1.['secret number'] = 12341
+object1['secret number'] = 12341 //Esta se hace con corchetes porque al ser 2 palabras, la notacion con puntos no capta la segunda palabra
+
