@@ -67,3 +67,8 @@ referenceToGreet() // se imprime "hello, my name is undefined"
 
 setTimeout(arto.greet, 1000)
 //En este caso, al ser el metodo setTimeout el que esta llamando al metodo, es el motor de JS el que lo llama, y es en este punto en que this se refiere al objeto global
+
+
+//Para no perder la referencia de this, se utiliza el metodo bind, en el que podemos indicar a donde apuntar
+setTimeout(arto.greet.bind(arto), 1000)
+//En este caso usamos bind(arto) para bindear this a el objeto arto, independientemente de donde y como se llame el metodo
