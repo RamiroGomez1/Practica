@@ -53,11 +53,11 @@ footer {
     clear: both;
     color:#333;
     text-align: center;
-    padding-inline-start: 5px 0;
+    padding: 50px;
     margin-top: 20px;
 }
 
-nav ul li a .activo {
+nav ul li a.activo {
     background-color: #4c76a5;
 }
 
@@ -178,4 +178,10 @@ h2{
 
 .servicio:nth-child(even){
     flex-direction: row-reverse
+}
+
+.servicio img{
+    border-radius: 13px;
+    display: block;
+    max-width: 225px;
 }
