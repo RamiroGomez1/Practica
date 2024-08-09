@@ -26,22 +26,36 @@ body {
 }
 
 .frase {
-    max-width: 900px;
+    max-width: 1000px;
     font-weight: 700;
 }
 
 .frase {
-    font-size: 5vw;
+    font-size: 5.2vw;
 }
 
 .parrafo {
     margin-top: 30px;
-    line-height: 1.5vw;
-    font-size: 1.5vw;
     font-weight: 100;
+}
+
+@media (max-width: 400px){
+    .parrafo{
+    line-height: 3vw;
+    font-size: 3vw;
+ }
+}
+
+
+@media (min-width: 400px) {
+    .parrafo{
+        font-size: 1.5vw ;
+        line-height: 1.5vw;
+    }
 }
 
 .navbarsecciones{
     font-size: 1.25vw;
 }
+
 
