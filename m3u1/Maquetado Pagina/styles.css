@@ -1,29 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800&display=swap');
 
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
-    background:#111;
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/bgimage.jpg) no-repeat center;
+    background-size: cover;
     color: aliceblue;
+    width:auto;
+    min-width: 300px;  
+    padding: 100px;
 }
 
-.brand{
+.brand {
     font-weight: 600;
 }
 
-.navcenter{
+.navcenter {
     font-weight: 300;
 }
 
-.dropdown-menu-dark{
+.dropdown-menu-dark {
     background-color: #333333;
 }
 
-.frase{
-    width: 400px;
-    font-size: 50px;
-    font-weight: 600;
-    line-height: 50px;
+.frase {
+    max-width: 900px;
+    font-weight: 700;
 }
 
+.frase {
+    font-size: 5vw;
+}
+
+.parrafo {
+    margin-top: 30px;
+    line-height: 1.5vw;
+    font-size: 1.5vw;
+    font-weight: 100;
+}
+
+.navbarsecciones{
+    font-size: 1.25vw;
+}
 
