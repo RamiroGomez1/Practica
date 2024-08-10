@@ -3,19 +3,29 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: 
-    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(img/bgimage.jpg) no-repeat center;
-    background-size: cover;
-    color: aliceblue;
-    min-width: 300px; 
-    padding: 20px ; 
-    height: fit-content;
-}
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(img/bgimage.jpg) no-repeat center;
+        background-size: cover;
+        color: aliceblue;
+        min-width: 300px;
+        padding: 20px;
+        height: fit-content;
+    }
 
-nav{
-    display:;
-}
+    
+    @media(max-width: 991px) {
+        .offcanvas-body ul li a {
+            color: #111;
+            font-size: 3.5vw;
+        }
+        .offcanvas-body ul li a:hover {
+            color: #111;
+        }
+        .brand a {
+            display: none;
+        }
+    }
 
 .brand {
     font-weight: 600;
@@ -35,8 +45,31 @@ nav{
 }
 
 .frase {
-    font-size: 5.2vw;
+    font-size: 5.5vw;
 }
+
+@media(max-width:768px){
+    .frase {
+        font-size: 9vw;
+    }
+    
+    .frase p{
+        font-size: 4vw;
+        line-height: 4vw;
+    }
+}
+@media(max-width:480px){
+    .frase {
+        font-size: 9vw;
+    }
+
+    .frase p{
+        font-size: 3vw;
+    }
+    
+}
+
+
 
 .parrafo {
     margin-top: 30px;
@@ -44,19 +77,19 @@ nav{
 }
 
 
-.navbarsecciones{
+.navbarsecciones {
     font-size: 1.25vw;
 }
 
 .planes {
     display: flex;
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
     justify-content: space-between;
-    gap:2vw;
+    gap: 2vw;
     align-items: center;
 }
 
-.plan{
+.plan {
     width: 15vw;
     min-height: min-content;
     padding: 1.5vw;
@@ -67,56 +100,59 @@ nav{
     border-radius: 16px;
     margin: 0 auto;
     border: 1px solid #333;
-    flex:auto ;
+    flex: auto;
     position: relative;
 }
 
-.ul{
-    list-style:square ;
+.ul {
+    list-style: square;
     margin-bottom: 0;
 }
 
-.plan:hover{
-    border-color:  rgb(173,3,3) ;
+.plan:hover {
+    border-color: rgb(173, 3, 3);
+
     .titulo {
-        border-color: rgb(170,3,3);
-    };
+        border-color: rgb(170, 3, 3);
+    }
+
     background-color: #2b2a2a;
-    
+
 }
 
 
-.plan button{
+.plan button {
     margin-left: 0.6vw;
-    display:block;
+    display: block;
     margin: 2vh auto 2vw auto
 }
 
 .titulo {
-    border-bottom:4px solid #555 ;
+    border-bottom: 4px solid #555;
     margin-bottom: 2vw;
     margin-left: 1vw;
     margin-right: 1vw;
     margin-top: 2vw;
 }
 
-@media (max-width:480px){
-    .titulo{
+@media (max-width:480px) {
+    .titulo {
         font-size: 10px;
     }
-    .titulo h3{
+
+    .titulo h3 {
         font-size: 4vw;
     }
 }
 
-@media (max-width: 480px){
-    .plan ul{
+@media (max-width: 480px) {
+    .plan ul {
         line-height: 4vw;
         font-size: 2vw;
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .plan {
         max-width: 200px;
         margin-bottom: 5vw;
@@ -124,36 +160,35 @@ nav{
 }
 
 
-@media (max-width: 768px){
-    .plan{
-        flex: 0 0 40% ;
+@media (max-width: 768px) {
+    .plan {
+        flex: 0 0 40%;
         font-size: 1.5vw;
     }
 }
 
 @media (min-width: 768px) {
-    .parrafo{
-        font-size: 1.5vw ;
+    .parrafo {
+        font-size: 1.5vw;
         line-height: 1.5vw;
     }
 }
 
 @media (min-width: 480px) {
-    .parrafo{
-        font-size: 1.5vw ;
+    .parrafo {
+        font-size: 1.5vw;
         line-height: 1.5vw;
     }
 }
 
-.intro{
+.intro {
     text-align: center;
     width: 70%;
     margin: 10vw auto 5vw auto;
-    margin-top:
 }
 
 @media (max-width: 480px) {
-    .intro{
+    .intro {
         font-size: 2vw;
         margin-bottom: 50px;
         margin-top: 30vw;
@@ -162,7 +197,7 @@ nav{
 }
 
 @media (max-width: 768px) {
-    .intro{
+    .intro {
         font-size: 2vw;
         margin-bottom: 50px;
         margin-top: 300px;
@@ -171,7 +206,7 @@ nav{
 }
 
 @media (max-width: 768px) {
-    .intro{
+    .intro {
         font-size: 2vw;
         margin-bottom: 50px;
         margin-top: vw;
