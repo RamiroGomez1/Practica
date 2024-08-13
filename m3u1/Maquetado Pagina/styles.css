@@ -209,7 +209,6 @@ body {
     .intro {
         font-size: 2vw;
         margin-bottom: 50px;
-        margin-top: vw;
         display: block;
     }
 }
@@ -218,7 +217,21 @@ body {
     margin-top: 10%;
 }
 
+section {
+    width:600px;
+}
 
+@media (max-width: 768px){
+    section{
+        width:80%
+    }
+}
+
+@media (max-width: 480px){
+    
+    section{
+        width: 90%;
+    }
 
 .card:hover {
     box-shadow: rgb(122, 0, 0) 0px 3px 3px 0px;
