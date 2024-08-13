@@ -13,9 +13,8 @@
 
     </head>
 
-
     <body
-        class="vh-100 d-flex justify-content-center align-items-center">
+        class=" d-flex justify-content-center align-items-center">
 
         <nav
             class="navbar navbar-dark navbar-expand-lg fs-5 fixed-top mt-3 pb-3">
@@ -37,7 +36,6 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-
                 <div
                     class="offcanvas  navbarsecciones offcanvas-end"
                     tabindex="-1"
@@ -48,7 +46,7 @@
                             type="button"
                             class="btn-close text-reset"
                             data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
+                            aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul
@@ -99,84 +97,80 @@
             </div>
         </nav>
         <main>
-            <div class="intro">
+            <div class="text-center noticias mb-5">
                 <h2>
-                    Nuestros Planes 
+                    Contacto
                 </h2>
-                <p>Nuestos servicios vienen con distintas membresias para que logres tu cuerpo ideal. Para esto ofrecemos planes profesionales y personalizados que se adaptan a tus necesidades y condiciones.</p>
+                <p>Ponete en contácto con nosotros y te ayudamos a responder tus
+                    dudas. Por favor completá el siguiente formulario y te
+                    llegará nuestra respuesta lo antes posible.</p>
             </div>
 
-            <div class="planes">
-                <div class="plan">
-                    <div class="titulo">
-                        <h3>Plan Express</h3>
-                        <p>8000 ARS</p>
+            <section style="background-color: #111; border-radius: 16px;"
+                class="container my-2 w-50 text-light p-4">
+
+                <form class="row g-3">
+                    <div class="col-md-12">
+                        <label for="inputEmail4"
+                            class="form-label">Email</label>
+                        <input type="email" placeholder="tunombre@mail.com"
+                            class="form-control" id="inputEmail4">
                     </div>
-                    <ul class="ul">
-                        <li>Plan de entrenamiento profesional</li>
-                        <li>Plan nutricional basico</li>
-                        <li>Desde la comodidad de tu casa</li>
-                        <li>Sin sesiones de seguimiento</li>
-                    </ul>
-                    <button type="button" class="btn btn-primary"
-                        style="background-color: rgb(173, 3, 3); border: none;"
-                        data-bs-toggle="button"
-                        autocomplete="off">Obtener</button>
-                </div>
-                <div class="plan">
-                    <div class="titulo">
-                        <h3>Plan Avanzado</h3>
-                        <p>12000 ARS</p>
+                    <div class="col-12">
+                        <label for="inputNombre"
+                            required class="form-label">Nombre y
+                            apellido</label>
+                        <input type="text" class="form-control"
+                            id="inputNombre" placeholder="Santiago Perez">
                     </div>
-                    <ul class="ul">
-                        <li>Plan de entrenamiento intensivo</li>
-                        <li>Plan nutricional especializado</li>
-                        <li>Sesion de seguimiento cada 15 dias</li>
-                        <li>Acceso a comunidad online</li>
-                    </ul>
-                    <button type="button" class="btn btn-primary"
-                    style="background-color: rgb(173, 3, 3); border: none;"
-                    data-bs-toggle="button"
-                    autocomplete="off">Obtener</button>
-                </div>
-                <div class="plan">
-                    <div class="titulo">
-                        <h3>Plan Pro</h3>
-                        <p>15000 ARS</p>
+                    <div class="col-md-6">
+                        <label for="inputCiudad"
+                            class="form-label">Ciudad</label>
+                        <input type="text" placeholder="Quilmes"
+                            class="form-control" id="inputCiudad">
                     </div>
-                    <ul class="ul">
-                        <li>Plan de entrenamiento personalizado</li>
-                        <li>Plan nutricional adaptado a tus metas</li>
-                        <li>Sesiones de seguimiento semanal</li>
-                        <li>Asesoria online 24/7</li>
-                    </ul>
-                    <button type="button" class="btn btn-primary"
-                    style="background-color: rgb(173, 3, 3); border: none;"
-                    data-bs-toggle="button"
-                    autocomplete="off">Obtener</button>
-                </div>
-                <div class="plan">
-                    <div class="titulo">
-                        <h3>Plan Familiar</h3>
-                        <p>20000 ARS</p>
+                    <div class="col-md-6">
+                        <label for="inputProvincia"
+                            class="form-label">Provincia</label>
+                        <select id="inputProvincia" class="form-select">
+                            <option selected>CABA</option>
+                            <option>Córdoba</option>
+                            <option>Santa Fe</option>
+                            <option>Mendoza</option>
+                            <option>Provincia de Buenos Aires</option>
+                        </select>
                     </div>
-                    <ul class="ul">
-                        <li>Entrenamiento grupal personal para hasta 4 personas</li>
-                        <li>Plan nutricional individual personalizado</li>
-                        <li>Seguimiento semanal</li>
-                        <li>Descuento en gimnasios adheridos</li>
-                    </ul>
-                    <button type="button" class="btn btn-primary"
-                        style="background-color: rgb(173, 3, 3); border: none;"
-                        data-bs-toggle="button"
-                        autocomplete="off">Obtener</button>
-                </div>
-            </div>
+                    <div class="col-md-2">
+                        <label for="inputZip" class="form-label"></label>
+
+                    </div><div class="form-group">
+                        <label for="exampleFormControlTextarea1">¿En qué podemos
+                            ayudarte?</label>
+                        <textarea class="form-control"
+                            id="exampleFormControlTextarea1"
+                            rows="3"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox"
+                                id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                Recibir Ofertas personalizadas al Email
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit"
+                            class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+
+            </section>
+
         </main>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
             crossorigin="anonymous"></script>
-
     </body>
 </html>

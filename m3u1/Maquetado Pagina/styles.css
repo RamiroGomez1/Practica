@@ -213,3 +213,13 @@ body {
         display: block;
     }
 }
+
+.noticias {
+    margin-top: 10%;
+}
+
+
+
+.card:hover {
+    box-shadow: rgb(122, 0, 0) 0px 3px 3px 0px;
+}
