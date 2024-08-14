@@ -17,9 +17,9 @@ const refresh = () => {
     )
 }
 
-setInterval(()=>{
+setInterval(() => {
     refresh()
     counter += 1
-},1000)
+}, 1000)
 
 //Llamar en repetidas ocasiones no es una buena practica al momento de re-renderizar componentes, para eso esta el capitulo 'Componente con estado'
