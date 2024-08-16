@@ -34,11 +34,11 @@ const App = () => {
   }
 
 //Creemos un solo componente Button para achicar codigo
-const Button = ({handleClick, text}) => {
+const Button = ({handleClick, text}) => (
   <button onClick={handleClick}>
     {text}
-  </button>
-}
+  </button>)
+
 
   return (
     <div>
