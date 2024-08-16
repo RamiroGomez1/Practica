@@ -8,6 +8,7 @@ const [value, setValue] = useState(10)
 const setToValue = (newValue) => () => {
   console.log('value now', newValue) // imprime el nuevo valor en la consola
   setValue(newValue)
+  //newValue es el valor puesto DENTRO de la funcion del controlador, en el componente, como parametro
 }
 
   return (
