@@ -32,6 +32,13 @@ const App = () => {
     setRight(updatedRight)
     setTotal(left + updatedRight)
   }
+  
+  const handleResetClick = () => {
+    const updatedRight = right - right
+    const updatedLeft = left - left
+    setRight(updatedRight)
+    setLeft(updatedLeft)
+  }
 
 //Creemos un solo componente Button para achicar codigo
 const Button = ({handleClick, text}) => (
@@ -46,6 +53,7 @@ const Button = ({handleClick, text}) => (
       <Button handleClick={handleLeftClick} text='left' />
       <Button handleClick={handleRightClick} text='right' />
       {right}
+      <Button handleClick={handleResetClick} text='reset' />
       <History allClicks={allClicks} />
       
     </div>
