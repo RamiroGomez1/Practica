@@ -34,10 +34,9 @@ const App = () => {
   }
   
   const handleResetClick = () => {
-    const updatedRight = right - right
-    const updatedLeft = left - left
-    setRight(updatedRight)
-    setLeft(updatedLeft)
+    setLeft(0)
+    setRight(0)
+    setAll([])
   }
 
 //Creemos un solo componente Button para achicar codigo
