@@ -1,8 +1,8 @@
 import react from 'react'
 
-import Header from './components/Header'
-import Nav from './components/Nav'
-import Footer from './components/Footer'
+import Header from './layout/components/Header'
+import Nav from './layout/components/Nav'
+import Footer from './layout/components/Footer'
 
 
 const App = () => {
