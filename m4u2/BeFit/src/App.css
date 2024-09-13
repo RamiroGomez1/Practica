@@ -5,13 +5,16 @@ body {
     font-family: 'Poppins', sans-serif;
     background:
         linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url(./img/bgimage.jpg) no-repeat center;
-        background-size: cover;
-        color: aliceblue;
-        min-width: 300px;
-        padding: 20px;
-        height: fit-content;
-    }
+        url('./img/bgimage.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: aliceblue;
+    min-width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
 
     
     @media(max-width: 991px) {
@@ -237,4 +240,9 @@ section {
     box-shadow: rgb(122, 0, 0) 0px 3px 3px 0px;
 }
 
+}
+
+.card-body {
+    margin-left: 10vh ;
+    margin-right: 10vh ;
 }

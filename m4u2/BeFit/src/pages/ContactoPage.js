@@ -7,17 +7,17 @@ const ContactoPage = (props) => {
     return(
         <main>
             <body
-        className=" d-flex justify-content-center align-items-center">
+        className="overflow-hidden d-flex justify-content-center align-items-center text-white">
 
         <nav
             className="navbar navbar-dark navbar-expand-lg fs-5 fixed-top mt-3 pb-3">
             <div className=" container-fluid">
                 <div className=" mt-3 brand">
-                    <a className="navbar-brand" href="#">
+                    <NavLink className="navbar-brand" href="#">
                         <img src="../img/klipartz.com (1).png" alt="Logo"
                             width="75" className="ms-5 me-3" />
                         BeFit
-                    </a>
+                    </NavLink>
                 </div>
                 <button
                     className="navbar-toggler"
@@ -45,45 +45,31 @@ const ContactoPage = (props) => {
                         <ul
                             className="navbar-nav navcenter justify-content-center flex-grow-1 pe-3">
                             <li className="nav-item mx-2">
-                                <a
+                                <NavLink
                                     className="nav-link mt-2 mx-3"
                                     aria-current="page"
-                                    href="../index.html">Inicio</a>
+                                    to='/'>Inicio</NavLink>
                             </li>
                             <li className="nav-item mt-2 mx-2 active">
-                                <a className="nav-link"
-                                    href="Planes.html">Planes</a>
+                                <NavLink className="nav-link"
+                                    to='/planes'>Planes</NavLink>
                             </li>
-                            <li className="nav-item dropdown mt-2 mx-3">
-                                <a
+                            <li className="nav-item mt-2 mx-3">
+                                <NavLink
                                     className="nav-link"
-                                    href="#"
-                                    id="dropdownId"
-                                    data-bs-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false">Sobre Nosotros</a>
-                                <div
-                                    className="dropdown-menu dropdown-menu-dark "
-                                    aria-labelledby="dropdownId">
-                                    <a className="dropdown-item"
-                                        href="#">Historia</a>
-                                    <a className="dropdown-item"
-                                        href="contacto.html">Contacto</a>
-                                    <a className="dropdown-item"
-                                        href="#">Integrantes</a>
-                                </div>
+                                    to='/contacto'>Contacto</NavLink>
                             </li>
                             <li className="nav-item mt-2 mx-3">
-                                <a className="nav-link" href="novedades.html">Novedades</a>
+                                <NavLink className="nav-link" to='/noticias'>Noticias</NavLink>
                             </li>
                             <li className="nav-item mt-2 mx-3">
-                                <a className="nav-link" href="#">Blogs</a>
+                                <NavLink className="nav-link" to='/'>Blogs</NavLink>
                             </li>
                         </ul>
                         <div className="mt-3 me-5">
-                            <a style={{ backgroundColor: 'rgb(173, 3, 3)' }}
+                            <NavLink style={{ backgroundColor: 'rgb(173, 3, 3)' }}
                                 className="text-decoration-none text-white text-center rounded px-5 py-2"
-                                href>Únete ya</a>
+                                href>Únete ya</NavLink>
                         </div>
                     </div>
                 </div>
