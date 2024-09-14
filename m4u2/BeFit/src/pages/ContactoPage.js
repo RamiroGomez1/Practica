@@ -14,7 +14,7 @@ const ContactoPage = (props) => {
             className="navbar navbar-dark navbar-expand-lg fs-5 fixed-top mt-3 pb-3">
             <div className=" container-fluid">
                 <div className=" mt-3 brand">
-                    <NavLink className="navbar-brand" href="#">
+                    <NavLink className="navbar-brand" to='/'>
                     <img src={logo} alt="Logo" width="75" className="ms-5 me-3" />
 
                         BeFit
