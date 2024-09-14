@@ -1,6 +1,8 @@
 import React from "react"
 import { NavLink } from "react-router-dom"
 
+import logo from '../img/logo.png';
+
 
 const HomePage = (props) => {
     return(
@@ -12,8 +14,8 @@ const HomePage = (props) => {
             className="navbar navbar-dark navbar-expand-lg fs-5 fixed-top mt-3 pb-3">
             <div className="container-fluid">
                 <div className=" mt-3 brand">
-                        <img src="../img/klipartz.com(1).png" alt="Logo"
-                            width="75" className="ms-5 me-3" />
+                <img src={logo} alt="Logo" width="75" className="ms-5 me-3" />
+
                     <NavLink className="navbar-brand " to='/'>
 
                         BeFit

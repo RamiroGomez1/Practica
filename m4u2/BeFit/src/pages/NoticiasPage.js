@@ -1,6 +1,11 @@
 import React from "react"
 import { NavLink } from "react-router-dom"
 
+import logo from '../img/logo.png'
+import HIIT from '../img/HIIT.jpg'
+import influencers from '../img/influencers.jpg'
+import beneficios from '../img/beneficios.jpg'
+
 
 
 const NoticiasPage = (props) => {
@@ -14,8 +19,8 @@ const NoticiasPage = (props) => {
             <div className="container-fluid">
                 <div className=" mt-3 brand">
                     <NavLink className="navbar-brand" href="#">
-                        <img src="../img/klipartz.com (1).png" alt="Logo"
-                            width="75" className="ms-5 me-3" />
+                    <img src={logo} alt="Logo" width="75" className="ms-5 me-3" />
+
                         BeFit
                     </NavLink>
                 </div>
@@ -63,7 +68,7 @@ const NoticiasPage = (props) => {
                                 <NavLink className="nav-link" to='/noticias'>Noticias</NavLink>
                             </li>
                             <li className="nav-item mt-2 mx-3">
-                                <NavLink className="nav-link" to='/'>Blogs</NavLink>
+                                <NavLink className="nav-link" to='/blog'>Blogs</NavLink>
                             </li>
                         </ul>
                         <div className="mt-3 me-5">
@@ -88,8 +93,8 @@ const NoticiasPage = (props) => {
             <div className="row row-cols-1 row-cols-md-3 g-4">
                 <div className="col">
                     <div style={{ backgroundColor: 'black' }}
-                        className="card text-white h-100">
-                        <img src="../img/HIIT.jpg" className="card-img-top"
+                        className="card text-white">
+                        <img src={HIIT} className="card-img-top"
                             alt="..." />
                         <div className="card-body">
                             <h5 className="card-title">Nuevas Directrices para el
@@ -114,7 +119,7 @@ const NoticiasPage = (props) => {
                 <div className="col">
                     <div style={{ backgroundColor: 'black' }}
                         className="card text-white h-100">
-                        <img src="../img/influencers.jpg" className="card-img-top"
+                        <img src={influencers} className="card-img-top"
                             alt="..." />
                         <div className="card-body">
                             <h5 className="card-title">Influencers Emergentes que
@@ -139,8 +144,8 @@ const NoticiasPage = (props) => {
                 <div className="col">
                     <div style={{ backgroundColor: 'black' }}
                         className="card text-white h-100">
-                        <img src="../img/Cognitive-Benefits-of-HIIT.jpg"
-                            className="card-img-top" alt="..." />
+                        <img src={beneficios}
+                            className="card-img-top " alt="..." />
                         <div className="card-body">
                             <h5 className="card-title">Investigaciones Revelan
                                 Beneficios del Entrenamiento HIIT para la Salud
