@@ -3,7 +3,6 @@ import Note from './components/Note'
 import noteService from './services/notes'
 import axios from 'axios'
 
-//Releer y entender la seccion 'Extraer la comunicacion con el backend en un modulo separado'
 
 const App = (props) => {
   const [notes, setNotes] = useState([])
@@ -33,6 +32,13 @@ const App = (props) => {
       setNotes(notes.concat(response.data))
       setNewNote('')
     })
+
+    noteService
+    .create(noteObject)
+    .then(returnedNote => {
+      setNotes(notes.concat(returnedNote))
+      setNewNote('')
+    })
   }
 
   const handleNoteChange = (event) => {
@@ -58,14 +64,12 @@ const App = (props) => {
     .then(returnedNote => {
       setNotes(notes.map(note => note.id !== id ? note : returnedNote))
     })
+    .catch(error => {
+      alert(`the note '${note.content}' was already deleted from server`)
+      setNotes(notes.filter(n => n.id !== id))
+    })
   }
 
-  noteService
-  .create(noteObject)
-  .then(returnedNote => {
-    setNotes(notes.concat(returnedNote))
-    setNewNote('')
-  })
 
 
   return (
