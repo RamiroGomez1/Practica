@@ -1,0 +1,19 @@
+
+<h1>{{title}}</h1>
+
+
+
+{{#if mostrarSeccion}}
+<p>Hola {{nombre}}. Bienvenido. Usted tiene {{edad}} años, por lo tanto
+    podra ver el contenido de la pagina. <a href="/salir">Salir</a></p>
+
+{{else if menorDeEdad}}
+<p>Lo sentimos pero usted es menor de 13 años. No puede ver el contenido<a href="/salir">Salir</a></p>
+
+{{else}}
+<form action="/ingresar" method="post">
+    <input type="text" name="nombre" placeholder="nombre">
+    <input type="number" min="0" name="edad" placeholder="edad">
+    <button type="submit">Enviar</button>
+</form>
+{{/if}}
