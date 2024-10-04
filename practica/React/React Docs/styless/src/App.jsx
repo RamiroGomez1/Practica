@@ -6,6 +6,21 @@ import axios from 'axios'
 import './index.css'
 
 
+const Footer = () => {
+  const footerStyle = {
+    color: 'green',
+    fontStyle: 'italic',
+    fontSize: '16px'
+  }
+
+  return (
+    <div style={footerStyle}>
+      <br />
+      <em>Note app, Department of Computer Sciense, University of Helsinki 2024</em>
+    </div>
+  )
+}
+
 const App = (props) => {
   const [notes, setNotes] = useState([])
   const [newNote, setNewNote] = useState('')
@@ -78,13 +93,26 @@ const App = (props) => {
       setTimeout(() => {
         setErrorMessage(null)
       }, 5000)
- 
-      
       setNotes(notes.filter(n => n.id !== id))
     })
   }
 
+  const deleteNoteData = (id) => {
+    event.preventDefault()
 
+    noteService
+      .del(id)
+      .then( response => setNotes(notes.filter(note => note.id !== id)))
+      .catch(error => {
+        setErrorMessage(`Note ${note.content} was already removed from server`)
+
+        setTimeout(() => { setErrorMessage(null) }, 5000)
+
+        setNotes(notes.filter(n => n.id !== id))
+
+        }
+      )
+  }
 
   return (
     <div>
@@ -97,15 +125,18 @@ const App = (props) => {
       </div>
       <ul>
         {notesToShow.map((note, i) =>
-          <Note key={i}
+          <Note
+           key={i}
            note={note}
-           toggleImportance={() => toggleImportance(note.id)} />
+           toggleImportance={() => toggleImportance(note.id)} 
+           deleteNoteData={deleteNoteData}/>
         )}
       </ul>
       <form onSubmit={addNote}>
         <input value={newNote} onChange={handleNoteChange} />
         <button type='submit'>save</button>
       </form>
+      <Footer />
     </div>
   )
 }
