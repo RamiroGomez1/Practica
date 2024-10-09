@@ -1,0 +1,7 @@
+id_emp	nombre	apellido	trabajo
+15	Miguel	Harper	Ejecutivo de Ventas Senior
+16	Monica	Sanchez	Ejecutivo de Ventas
+17	Alicia	Simlai	Ejecutivo de Ventas
+18	Jose	Iriarte	Ejecutivo de Ventas
+19	Sabrina	Allende	Gerente de Soporte Tecnico
+20	Pedro	Campion	Gerente de Finanzas

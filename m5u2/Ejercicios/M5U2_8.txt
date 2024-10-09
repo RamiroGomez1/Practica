@@ -1,0 +1,5 @@
+nombre	apellido	sueldo
+Alfredo	Fernandez	75000
+Juan	Aguero	80000
+Eduardo	Sacan	75000
+Alejandro	Nanda	70000

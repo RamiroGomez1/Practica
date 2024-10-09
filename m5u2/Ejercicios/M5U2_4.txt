@@ -1,0 +1,16 @@
+nombre	apellido	edad
+Juan	Hagan	32
+Gonzalo	Pillai	32
+Alfredo	Fernandez	31
+Juan	Aguero	34
+Alejandro	Nanda	32
+Paublo	Simon	43
+Arturo	Hernandez	32
+Jimena	Cazado	32
+Roberto	Luis	35
+Daniel	Gutierrez	34
+Miguel	Harper	36
+Monica	Sanchez	30
+Sabrina	Allende	32
+Pedro	Campion	36
+Hernan	Rosso	33

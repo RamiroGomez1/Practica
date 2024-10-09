@@ -1,0 +1,10 @@
+Nombre	Edad
+Juan	32
+Gonzalo	32
+Ana	27
+Maria	26
+Alfredo	31
+Juan	34
+Eduardo	25
+Alejandro	32
+Jimena	32

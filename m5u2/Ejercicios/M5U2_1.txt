@@ -1,0 +1,22 @@
+nombre	trabajo
+Juan	Programador Senior
+Gonzalo	Programador Senior
+Ana	Desarrollador Web
+Maria	Desarrollador Web
+Alfredo	Programador
+Juan	Programador
+Eduardo	Programador
+Alejandro	Programador
+Paublo	Especialista Multimedia
+Arturo	Especialista Multimedia
+Jimena	Diseñador Web Senior
+Roberto	Administrador de Sistemas
+Daniel	Administrador de Sistemas
+Miguel	Ejecutivo de Ventas Senior
+Monica	Ejecutivo de Ventas
+Alicia	Ejecutivo de Ventas
+Jose	Ejecutivo de Ventas
+Sabrina	Gerente de Soporte Tecnico
+Pedro	Gerente de Finanzas
+Mariano	Presidente
+Hernan	Especialista Multimedia

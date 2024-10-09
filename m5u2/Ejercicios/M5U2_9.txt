@@ -1,0 +1,4 @@
+nombre	apellido	sueldo	trabajo
+Alfredo	Fernandez	75000	Programador
+Juan	Aguero	80000	Programador
+Eduardo	Sacan	75000	Programador
