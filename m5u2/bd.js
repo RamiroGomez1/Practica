@@ -1,4 +1,6 @@
 var mysql = require('mysql')
+require('dotenv').config({ path: './data.env' })
+
 var util = require('util')
 
 var pool = mysql.createPool({
