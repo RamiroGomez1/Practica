@@ -1,5 +1,5 @@
 var mysql = require('mysql')
-require('dotenv').config({ path: './data.env' })
+require('dotenv').config({ path: './.env' })
 
 var util = require('util')
 
