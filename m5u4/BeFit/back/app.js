@@ -12,14 +12,6 @@ var loginRouter = require('./routes/admin/login')
 
 var app = express();
 
-/*
-Cambiar ruteo de imagenes a public
-mover modulos de app.css a sus respectivos archivos dependiendo de que Page se trate
-
-armar diseño pagina login 
-
-*/
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
