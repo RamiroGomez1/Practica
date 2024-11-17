@@ -19,6 +19,8 @@ router.post('/', async (req, res, next) => {
     var data = await usuariosModel.getUserByUsernameAndPassword(user, password) //se envia la info guardada en los vars usuario y password
 
     if (data) { //si tengo un registro
+      req.session.id_usuario = data.id;
+      req.session.nombre = data.user;
       res.redirect('/admin/novedades') //redireccioname a la nueva pagina (/admin/novedades)
     } else {
       res.render('admin/login', {
