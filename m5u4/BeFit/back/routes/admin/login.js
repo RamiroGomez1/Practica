@@ -14,25 +14,17 @@ router.get('/', function (req, res, next) {
 
 router.post('/', async (req, res, next) => {
   try {
-    var user = req.body.usuario; // captura la informacion (username)
+    var user = req.body.user; // captura la informacion (username)
     var password = req.body.password; // captura la contraseña
-
-    console.log("Username:", req.body.usuario);
-    console.log("Password:", req.body.password);
-
-
     var data = await usuariosModel.getUserByUsernameAndPassword(user, password) //se envia la info guardada en los vars usuario y password
 
-
-
-    if (data != undefined) { //si tengo un registro
+    if (data) { //si tengo un registro
       res.redirect('/admin/novedades') //redireccioname a la nueva pagina (/admin/novedades)
     } else {
       res.render('admin/login', {
         layout: 'admin/layout',
         error: true
       });
-      console.log(error);
     }
   } catch (error) {
     console.log(error);

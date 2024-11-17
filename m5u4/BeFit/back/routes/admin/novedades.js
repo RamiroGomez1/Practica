@@ -4,7 +4,7 @@ var router = express.Router();
 /* GET novedades page. */
 router.get('/novedades', (req, res, next) => {
   res.render('admin/novedades', {
-    layout: 'admin/layout',
+    layout: 'admin/novedades',
   });
 });
 
