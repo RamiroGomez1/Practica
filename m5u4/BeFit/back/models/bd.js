@@ -11,13 +11,6 @@ var pool = mysql.createPool({
     database: process.env.MYSQL_DB_NAME
 })
 
-
-pool.query('SELECT 1 + 1 AS result', (error, results) => {
-    if (error) {
-        console.error('Database connection failed:', error);
-    } else {
-        console.log('Database connection successful:', results);
-    }
-});
+pool.query = util.promisify(pool.query);
 
 module.exports = pool
