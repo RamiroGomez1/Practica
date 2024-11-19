@@ -44,4 +44,26 @@ router.post('/agregar' //cuando el boton para agregar sea presionado, que se eje
   }
 })
 
+router.get('/borrar', (req, res, next) => {
+  res.render('admin/novedades', {
+    layout: 'admin/layout'
+  })
+})
+
+router.post('/borrar/:id', async (req, res, next) => {
+  const { id } = req.params;
+  try {
+      await novedadesModel.deleteNovedad(id);
+      res.redirect('/admin/novedades') 
+  } catch (error) {
+    console.log(error)
+    res.render('admin/novedades', {
+      layout: 'admin/layout',
+      error: true,
+      message: 'No se pudo eliminar la novedad'
+    })
+  }
+})
+
+
 module.exports = router;

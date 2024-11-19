@@ -44,8 +44,9 @@
         <td>{{subtitulo}}</td>
         <td>{{cuerpo}}</td>
         <td class="text-end">
-          <button type="button" class="btn btn-secondary">Editar</button>
-          <button type="button" class="btn btn-secondary">Borrar</button>
+          <form action="/admin/novedades/borrar/{{id}}" method="POST">
+          <button type="submit" class="btn btn-secondary">Borrar</button>
+          </form>
         </td>
       </tr>
       {{/each}}
