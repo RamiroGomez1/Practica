@@ -44,13 +44,8 @@ router.post('/agregar' //cuando el boton para agregar sea presionado, que se eje
   }
 })
 
-router.get('/borrar', (req, res, next) => {
-  res.render('admin/novedades', {
-    layout: 'admin/layout'
-  })
-})
 
-router.post('/borrar/:id', async (req, res, next) => {
+router.get('/borrar/:id', async (req, res, next) => {
   const { id } = req.params;
   try {
       await novedadesModel.deleteNovedad(id);
@@ -64,6 +59,45 @@ router.post('/borrar/:id', async (req, res, next) => {
     })
   }
 })
+
+router.get('/editar/:id', async (req, res, next) => {
+
+  try {
+      var id = req.params.id;
+      var novedad = await novedadesModel.getNovedadesById(id);
+
+      res.render('admin/editar', {
+        layout:'admin/layout',
+        novedad
+      }) 
+  } catch (error) {
+    console.log(error)
+  }
+})
+
+
+
+router.post('/editar', async (req, res, next) => {
+      try {
+        var id = req.body.id;
+        var obj = {
+          titulo: req.body.titulo,
+          subtitulo: req.body.subtitulo,
+          cuerpo: req.body.cuerpo
+        }
+
+        await novedadesModel.editarNovedadById(obj, id);
+        res.redirect('/admin/novedades');
+      } catch (error) {
+        console.log(error)
+        res.render('admin/editar', {
+          layout: 'admin/layout',
+          error: true,
+          message:'No se pudo editar la novedad'
+        })
+      }
+})
+
 
 
 module.exports = router;

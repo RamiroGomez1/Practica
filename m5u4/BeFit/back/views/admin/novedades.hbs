@@ -44,9 +44,12 @@
         <td>{{subtitulo}}</td>
         <td>{{cuerpo}}</td>
         <td class="text-end">
-          <form action="/admin/novedades/borrar/{{id}}" method="POST">
-          <button type="submit" class="btn btn-secondary">Borrar</button>
-          </form>
+          <a class="btn" href="/admin/novedades/borrar/{{id}}">
+        <p>Borrar</p>
+          </a>
+          <a class="btn" href="/admin/novedades/editar/{{id}}">
+        <p>Editar</p>
+          </a>
         </td>
       </tr>
       {{/each}}
