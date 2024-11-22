@@ -12,6 +12,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/admin/login')
 var novedadesRouter = require('./routes/admin/novedades')
+var fileUpload = require('express-fileupload')
 
 var app = express();
 
@@ -30,6 +31,11 @@ app.use(session({
   cookie: {maxAge: null },
   resave: false,
   saveUninitialized: true
+}))
+
+app.use(fileUpload({
+  useTempFiles:true,
+  tempFileDir:'/tmp/'
 }))
 
 secured = async (req, res, next) => {
